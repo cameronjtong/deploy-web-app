@@ -25,8 +25,8 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  sinatra (= 2.1.0)
-  thin (= 1.8.1)
+  sinatra
+  thin
 
 BUNDLED WITH
    2.2.25
