@@ -10,15 +10,15 @@ get("/") do
   erb :index
 end
 
-get("/movies/new") do
+get("/new") do
   erb :new
 end
 
-post("/movies/create") do
+post("/create") do
   @movie = Movie.new
   @movie.title = params["title"]
   @movie.year = params["year"]
   @movie.director = params["director"]
   store.save(@movie)
-  redirect "/movies"
+  redirect "/"
 end
