@@ -5,7 +5,7 @@ require_relative "lib/movie_store"
 
 store = MovieStore.new("movie_store.yml")
 
-get("/movies") do
+get("/") do
   @movies = store.all
   erb :index
 end
